@@ -1,0 +1,13 @@
+Manifest.toml
+.vscode
+.DS_Store
+
+# Generated model output (examples/tests write these as scratch files)
+*.wb
+*.grid
+*.vtu
+*.pvtu
+!test/fixtures/*.wb
+
+build/
+products/
