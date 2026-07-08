@@ -1,5 +1,7 @@
 # WorldBuilder.jl
 
+[![CI](https://github.com/JuliaGeodynamics/WorldBuilder.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/JuliaGeodynamics/WorldBuilder.jl/actions/workflows/CI.yml)
+
 A Julia interface to the [Geodynamic World Builder](https://gwb.readthedocs.io/) (GWB): build `.wb` model files from Julia structs, run the GWB grid/point-query tools, and query temperature, composition, grains, and feature tags in-process — no subprocess needed.
 
 ## Installation
