@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+title: "WorldBuilder.jl: A Julia interface to the Geodynamic World Builder"
+type: software
+authors:
+  - family-names: Kaus
+    given-names: Boris J.P.
+    orcid: "https://orcid.org/0000-0002-0247-8660"
+    affiliation: Johannes Gutenberg University Mainz
+  - family-names: Fraters
+    given-names: Menno
+    orcid: "https://orcid.org/0000-0003-0035-7723"
+    affiliation: University of Graz
+repository-code: "https://github.com/JuliaGeodynamics/WorldBuilder.jl"
+license: LGPL-2.1-only
+keywords:
+  - geodynamics
+  - Julia
+  - Geodynamic World Builder
+  - geophysics
