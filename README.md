@@ -15,6 +15,13 @@ Pkg.add(url="https://github.com/JuliaGeodynamics/WorldBuilder.jl")
 
 The precompiled GWB binaries ([`WorldBuilder_jll`](https://github.com/JuliaBinaryWrappers/WorldBuilder_jll.jl)) are registered and will be installed automatically. Once WorldBuilder.jl itself is registered, `Pkg.add("WorldBuilder")` will work directly.
 
+You can run the test suite with:
+```julia
+julia> ]
+pkg> test WorldBuilder
+```
+
+
 ## Quick start
 
 ```julia
