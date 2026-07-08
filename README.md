@@ -2,19 +2,16 @@
 
 A Julia interface to the [Geodynamic World Builder](https://gwb.readthedocs.io/) (GWB): build `.wb` model files from Julia structs, run the GWB grid/point-query tools, and query temperature, composition, grains, and feature tags in-process — no subprocess needed.
 
-> **⚠️ Installation note:** This package depends on `WorldBuilder_jll`, which
-> is **not yet registered** in the Julia General registry — the
-> [Yggdrasil PR](https://github.com/JuliaPackaging/Yggdrasil) that builds it
-> is still pending. Until it merges and registers, `Pkg.add("WorldBuilder")`
-> / `Pkg.instantiate()` will fail to resolve `WorldBuilder_jll`. In the
-> meantime, either:
-> 1. `Pkg.develop` a local build of `WorldBuilder_jll` (see
->    [`gen/generate.jl`](gen/generate.jl)'s sibling Yggdrasil recipe), or
-> 2. Use [`use_local_build!`](#local-gwb-build) to point this package at a
->    locally-compiled GWB checkout instead of the JLL — this only needs
->    `gwb-dat`/`gwb-grid` built (`-DWB_ENABLE_APPS=ON`), not the JLL at all.
->
-> This note will be removed once `WorldBuilder_jll` is registered.
+## Installation
+
+WorldBuilder.jl is not yet registered in the Julia General registry, so install it directly from GitHub:
+
+```julia
+using Pkg
+Pkg.add(url="https://github.com/JuliaGeodynamics/WorldBuilder.jl")
+```
+
+The precompiled GWB binaries ([`WorldBuilder_jll`](https://github.com/JuliaBinaryWrappers/WorldBuilder_jll.jl)) are registered and will be installed automatically. Once WorldBuilder.jl itself is registered, `Pkg.add("WorldBuilder")` will work directly.
 
 ## Quick start
 
